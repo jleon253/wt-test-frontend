@@ -9,6 +9,7 @@ import { NotfoundComponent } from './components/pages/notfound/notfound.componen
 import { ErrorComponent } from './components/pages/error/error.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { TheoryComponent } from './components/pages/theory/theory.component';
+import { BloqtextComponent } from './components/shared/bloqtext/bloqtext.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { TheoryComponent } from './components/pages/theory/theory.component';
     ErrorComponent,
     NavbarComponent,
     TheoryComponent,
+    BloqtextComponent,
   ],
   imports: [
     BrowserModule,

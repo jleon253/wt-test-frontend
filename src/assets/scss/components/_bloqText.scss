@@ -1,0 +1,28 @@
+.wt-bloqText{
+  width: 50%;
+  @include media(mobile-only){
+    width: 80%;
+  }
+  &__title{
+    word-break: break-all;
+    white-space: pre-wrap;
+  }
+  &__paragraph{
+    word-wrap: break-word;
+  }
+  &.center{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  &.left{
+    margin-left: 0px;
+    margin-right: auto;
+    text-align: left;
+  }
+  &.right{
+    margin-left: auto;
+    margin-right: 0px;
+    text-align: right;
+  }
+}

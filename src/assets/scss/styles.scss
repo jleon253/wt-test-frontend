@@ -6,6 +6,7 @@
 //  ╚═╝╚═╝.....╚═╝╚═╝......╚═════╝.╚═╝..╚═╝...╚═╝...╚══════╝
 //  ........................................................
 
+@import '../../../node_modules/bootstrap-4-grid/scss/grid.scss';
 // Utilities
 @import 'utilities/_variables.scss';
 @import 'utilities/_breakpoints.scss';
@@ -15,5 +16,8 @@
 @import 'base/_normalize.scss';
 @import 'base/_typo.scss';
 // Components
+@import 'components/_bloqText.scss';
 // Layout
 @import 'layout/_navbar.scss';
+// Views
+@import 'views/home.scss';

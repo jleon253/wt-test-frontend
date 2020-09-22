@@ -1,0 +1,10 @@
+.wt-home__section{
+  @include spaceSection();
+  color: $c-w;
+  &--blue{
+    background-color: $c-primary;
+  }
+  &--orange{
+    background-color: $c-secondary;
+  }
+}
