@@ -12,4 +12,11 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openMenu() {
+    let menu = document.getElementById('wt-menu');
+    let menuIcon = document.getElementById('wt-navbar__menuIcon');
+    menu.classList.toggle('open-menu');
+    menuIcon.classList.toggle('close');
+  }
+
 }

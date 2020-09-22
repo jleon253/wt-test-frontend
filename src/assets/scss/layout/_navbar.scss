@@ -1,0 +1,78 @@
+//  ███╗...██╗.█████╗.██╗...██╗██████╗..█████╗.██████╗.
+//  ████╗..██║██╔══██╗██║...██║██╔══██╗██╔══██╗██╔══██╗
+//  ██╔██╗.██║███████║██║...██║██████╔╝███████║██████╔╝
+//  ██║╚██╗██║██╔══██║╚██╗.██╔╝██╔══██╗██╔══██║██╔══██╗
+//  ██║.╚████║██║..██║.╚████╔╝.██████╔╝██║..██║██║..██║
+//  ╚═╝..╚═══╝╚═╝..╚═╝..╚═══╝..╚═════╝.╚═╝..╚═╝╚═╝..╚═╝
+//  ...................................................
+
+.wt-navbar{
+  background-color: $c-primary_dark;
+  color: $c-w;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  @include spaceSection();
+  @include transition(padding);
+  &__menuIcon{
+    .closeIcon{
+      display: none;
+    }
+    &.close{
+      .openIcon{
+        display: none;
+      }
+      .closeIcon{
+        display: block;
+      }
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.wt-menu{
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+  z-index: 9;
+  opacity: 0;
+  box-sizing: border-box;
+  background-color: $c-primary_dark;
+  color: $c-w;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  @include transition();
+  @include media(desktop-s){
+    width: 30%;
+    right: 0px;
+    transform: translateX(100%);
+  }
+  @include media(mobile-only){
+    width: 100%;
+    height: auto;
+    transform: translateY(-150%);
+  }
+}
+
+.open-menu{
+  opacity: 1;
+  @include media(desktop-s){
+    transform: translateX(0%);
+  }
+  @include media(mobile-only){
+    transform: translateX(0%);
+  }
+}
+
+.wt-navbar-nav{
+  width: auto;
+}

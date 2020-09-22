@@ -1,0 +1,22 @@
+//  ███╗...███╗██╗██╗..██╗██╗███╗...██╗███████╗
+//  ████╗.████║██║╚██╗██╔╝██║████╗..██║██╔════╝
+//  ██╔████╔██║██║.╚███╔╝.██║██╔██╗.██║███████╗
+//  ██║╚██╔╝██║██║.██╔██╗.██║██║╚██╗██║╚════██║
+//  ██║.╚═╝.██║██║██╔╝.██╗██║██║.╚████║███████║
+//  ╚═╝.....╚═╝╚═╝╚═╝..╚═╝╚═╝╚═╝..╚═══╝╚══════╝
+//  ...........................................
+
+@mixin spaceSection(){
+  padding: $s-section_y $s-section_x;
+  @include media(mobile-only){
+    padding: ($s-section_y / 2) ($s-section_x / 2);
+  }
+}
+
+@mixin transition($props: all, $time: 0.5s){
+  transition-property: $props;
+  transition-duration: $time;
+  transition-timing-function: ease-in-out;
+}
+
+
