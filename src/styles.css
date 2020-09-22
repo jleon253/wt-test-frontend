@@ -4918,6 +4918,10 @@ ul {
   font-family: "Gothic A1", system-ui, sans-serif;
 }
 
+p {
+  line-height: 1.65rem;
+}
+
 .light {
   font-weight: 300;
 }
@@ -4932,6 +4936,11 @@ ul {
 
 .bigger-size {
   font-size: 4.5rem;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+  .bigger-size {
+    font-size: 3rem;
+  }
 }
 @media only screen and (max-width: 992px) {
   .bigger-size {
@@ -4951,6 +4960,16 @@ ul {
 .normal-size {
   font-size: 1.4rem;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+  .normal-size {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .normal-size {
+    font-size: 1.2rem;
+  }
+}
 @media only screen and (max-width: 992px) {
   .normal-size {
     font-size: 0.88rem;
@@ -4968,6 +4987,48 @@ ul {
 
 .xsmall-size {
   font-size: 0.5rem;
+}
+
+.wt-btn {
+  display: block;
+  box-sizing: content-box;
+  padding: 5px 50px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  width: auto;
+  height: 40px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+  .wt-btn {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .wt-btn {
+    font-size: 0.88rem;
+  }
+}
+.wt-btn:hover {
+  cursor: pointer;
+  box-shadow: bottom-shadow(1), top-shadow(1);
+}
+.wt-btn__primary {
+  background-color: #EC4E20;
+  color: #fff;
+}
+.wt-btn--small {
+  width: 50%;
+  height: 20px;
 }
 
 .wt-bloqText {
@@ -5009,14 +5070,14 @@ ul {
   align-items: center;
   position: relative;
   z-index: 10;
-  padding: 50px 100px;
+  padding: 30px 100px;
   transition-property: padding;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
 @media only screen and (max-width: 992px) {
   .wt-navbar {
-    padding: 25px 50px;
+    padding: 15px 50px;
   }
 }
 .wt-navbar__menuIcon .closeIcon {
@@ -5084,14 +5145,23 @@ ul {
   width: auto;
 }
 
-.wt-home__section {
-  padding: 50px 100px;
-  color: #fff;
+.wt-home {
+  background-image: url("assets/svg/illustrations/background.svg");
+  background-color: #0D4BE3;
+  background-size: 150%;
+  background-position: -10% 45%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 @media only screen and (max-width: 992px) {
-  .wt-home__section {
-    padding: 25px 50px;
+  .wt-home {
+    background-size: 400%;
+    background-position: 30% 55%;
   }
+}
+.wt-home__section {
+  box-sizing: content-box;
+  color: #fff;
 }
 .wt-home__section--blue {
   background-color: #0D4BE3;

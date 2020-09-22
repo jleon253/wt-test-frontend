@@ -13,10 +13,61 @@
   }
 }
 
+//------ Transition -------
+
 @mixin transition($props: all, $time: 0.5s){
   transition-property: $props;
   transition-duration: $time;
   transition-timing-function: ease-in-out;
 }
 
+//------ Border Radius -------
 
+@mixin b-radius($tl:0, $tr:0, $bl:0, $br:0){
+  border-top-left-radius: $tl;
+  border-top-right-radius: $tr;
+  border-bottom-left-radius: $bl;
+  border-bottom-right-radius: $br;
+}
+
+//------ Shadows --------
+
+@mixin shadow($depth) {
+  @if $depth < 1 {
+    box-shadow: none;
+  } @else if $depth > 5 {
+    @warn "Invalid $depth `#{$depth}` for mixin `shadow`.";
+  } @else {
+    box-shadow: bottom-shadow($depth), top-shadow($depth);
+  }
+}
+
+//------ Button -------
+
+@mixin button(){
+  display: block;
+  box-sizing: content-box;
+  padding: $s-button_y $s-button_x;
+  @include b-radius();
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: $f-normal;
+  @include media(desktop-m-only){
+    font-size: $f-normal - 0.2;
+  }
+  @include media(mobile-only){
+    font-size: $f-small;
+  }
+  font-weight: bold;
+  @include transition(box-shadow, 0.5s);
+  &:hover{
+    cursor: pointer;
+    @include shadow(1);
+  }
+}
+
+@mixin buttonSize($w:100%,$h:40px){
+  width: $w;
+  height: $h;
+}

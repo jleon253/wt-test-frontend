@@ -1,10 +1,23 @@
-.wt-home__section{
-  @include spaceSection();
-  color: $c-w;
-  &--blue{
-    background-color: $c-primary;
+.wt-home{
+  background-image: url('assets/svg/illustrations/background.svg');
+  background-color: $c-primary;
+  background-size: 150%;
+  background-position: -10% 45%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  @include media(mobile-only){
+    background-size: 400%;
+    background-position: 30% 55%;
   }
-  &--orange{
-    background-color: $c-secondary;
+  &__section{
+    box-sizing: content-box;
+    // @include spaceSection();
+    color: $c-w;
+    &--blue{
+      background-color: $c-primary;
+    }
+    &--orange{
+      background-color: $c-secondary;
+    }
   }
 }

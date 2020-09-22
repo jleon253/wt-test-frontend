@@ -10,6 +10,10 @@
   font-family: 'Gothic A1', system-ui, sans-serif;
 }
 
+p{
+  line-height: 1.65rem;
+}
+
 .light{
   font-weight: 300;
 }
@@ -24,6 +28,9 @@
 
 .bigger-size{
   font-size: $f-bigger;
+  @include media(desktop-m-only){
+    font-size: $f-bigger - 1.5; // 42px
+  }
   @include media(mobile-only){
     font-size: $f-bigger - 1.87; // 42px
   }
@@ -38,6 +45,12 @@
 
 .normal-size{
   font-size: $f-normal;
+  @include media(desktop-m-only){
+    font-size: $f-normal - 0.2;
+  }
+  @include media(laptop){
+    font-size: $f-normal - 0.2;
+  }
   @include media(mobile-only){
     font-size: $f-small;
   }
