@@ -1,13 +1,13 @@
 .wt-home{
   background-image: url('assets/svg/illustrations/background.svg');
   background-color: $c-primary;
-  background-size: 150%;
-  background-position: -10% 45%;
+  background-size: 400%;
+  background-position: 30% 55%;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  @include media(mobile-only){
-    background-size: 400%;
-    background-position: 30% 55%;
+  @include media('desktop'){
+    background-size: 150%;
+    background-position: -10% 45%;
   }
   &__section{
     box-sizing: content-box;

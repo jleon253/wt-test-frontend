@@ -7,9 +7,9 @@
 //  ...........................................
 
 @mixin spaceSection(){
-  padding: $s-section_y $s-section_x;
-  @include media(mobile-only){
-    padding: ($s-section_y / 2) ($s-section_x / 2);
+  padding: ($s-section_y / 2) ($s-section_x / 2);
+  @include media('tablet'){
+    padding: $s-section_y $s-section_x;
   }
 }
 
@@ -52,12 +52,12 @@
   border: none;
   outline: none;
   text-align: center;
-  font-size: $f-normal;
-  @include media(desktop-m-only){
+  font-size: $f-small;
+  @include media('large'){
     font-size: $f-normal - 0.2;
   }
-  @include media(mobile-only){
-    font-size: $f-small;
+  @include media('x-large'){
+    font-size: $f-normal;
   }
   font-weight: bold;
   @include transition(box-shadow, 0.5s);

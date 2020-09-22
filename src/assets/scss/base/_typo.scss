@@ -27,39 +27,36 @@ p{
 }
 
 .bigger-size{
-  font-size: $f-bigger;
-  @include media(desktop-m-only){
-    font-size: $f-bigger - 1.5; // 42px
+  font-size: $f-bigger - 1.87; // 42px
+  @include media('medium'){
+    font-size: $f-bigger - 1.5; // 48px
   }
-  @include media(mobile-only){
-    font-size: $f-bigger - 1.87; // 42px
+  @include media('x-large'){
+    font-size: $f-bigger; // 72px
   }
 }
 
 .big-size{
-  font-size: $f-big;
-  @include media(mobile-only){
-    font-size: $f-big - 0.25;
+  font-size: $f-big - 0.25;
+  @include media('desktop'){
+    font-size: $f-big;
   }
 }
 
 .normal-size{
-  font-size: $f-normal;
-  @include media(desktop-m-only){
+  font-size: $f-small;
+  @include media('medium'){
     font-size: $f-normal - 0.2;
   }
-  @include media(laptop){
-    font-size: $f-normal - 0.2;
-  }
-  @include media(mobile-only){
-    font-size: $f-small;
+  @include media('x-large'){
+    font-size: $f-normal;
   }
 }
 
 .small-size{
-  font-size: $f-small;
-  @include media(mobile-only){
-    font-size: $f-xsmall;
+  font-size: $f-xsmall;
+  @include media('tablet'){
+    font-size: $f-small;
   }
 }
 

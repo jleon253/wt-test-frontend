@@ -4935,53 +4935,48 @@ p {
 }
 
 .bigger-size {
-  font-size: 4.5rem;
+  font-size: 2.63rem;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media (min-width: 1024px) {
   .bigger-size {
     font-size: 3rem;
   }
 }
-@media only screen and (max-width: 992px) {
+@media (min-width: 1440px) {
   .bigger-size {
-    font-size: 2.63rem;
+    font-size: 4.5rem;
   }
 }
 
 .big-size {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
-@media only screen and (max-width: 992px) {
+@media (min-width: 992px) {
   .big-size {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 
 .normal-size {
-  font-size: 1.4rem;
+  font-size: 0.88rem;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media (min-width: 1024px) {
   .normal-size {
     font-size: 1.2rem;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 1440px) {
   .normal-size {
-    font-size: 1.2rem;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .normal-size {
-    font-size: 0.88rem;
+    font-size: 1.4rem;
   }
 }
 
 .small-size {
-  font-size: 0.88rem;
+  font-size: 0.75rem;
 }
-@media only screen and (max-width: 992px) {
+@media (min-width: 768px) {
   .small-size {
-    font-size: 0.75rem;
+    font-size: 0.88rem;
   }
 }
 
@@ -5000,7 +4995,7 @@ p {
   border: none;
   outline: none;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 0.88rem;
   font-weight: bold;
   transition-property: box-shadow;
   transition-duration: 0.5s;
@@ -5008,14 +5003,14 @@ p {
   width: auto;
   height: 40px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+@media (min-width: 1200px) {
   .wt-btn {
     font-size: 1.2rem;
   }
 }
-@media only screen and (max-width: 992px) {
+@media (min-width: 1440px) {
   .wt-btn {
-    font-size: 0.88rem;
+    font-size: 1.4rem;
   }
 }
 .wt-btn:hover {
@@ -5032,11 +5027,11 @@ p {
 }
 
 .wt-bloqText {
-  width: 50%;
+  width: 80%;
 }
-@media only screen and (max-width: 992px) {
+@media (min-width: 768px) {
   .wt-bloqText {
-    width: 80%;
+    width: 50%;
   }
 }
 .wt-bloqText__title {
@@ -5071,14 +5066,14 @@ p {
   position: sticky;
   top: 0;
   z-index: 10;
-  padding: 30px 100px;
+  padding: 15px 50px;
   transition-property: padding;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
-@media only screen and (max-width: 992px) {
+@media (min-width: 768px) {
   .wt-navbar {
-    padding: 15px 50px;
+    padding: 30px 100px;
   }
 }
 .wt-navbar__menuIcon .closeIcon {
@@ -5095,9 +5090,10 @@ p {
 }
 
 .wt-menu {
+  width: 100%;
+  transform: translateY(-150%);
   display: flex;
   justify-content: center;
-  height: 100%;
   padding: 25px;
   position: fixed;
   z-index: 9;
@@ -5114,33 +5110,18 @@ p {
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .wt-menu {
     width: 30%;
+    height: 100%;
     right: 0px;
     transform: translateX(100%);
-  }
-}
-@media only screen and (max-width: 992px) {
-  .wt-menu {
-    width: 100%;
-    height: auto;
-    transform: translateY(-150%);
   }
 }
 
 .open-menu {
   opacity: 1;
-}
-@media only screen and (min-width: 992px) {
-  .open-menu {
-    transform: translateX(0%);
-  }
-}
-@media only screen and (max-width: 992px) {
-  .open-menu {
-    transform: translateX(0%);
-  }
+  transform: translateX(0%);
 }
 
 .wt-navbar-nav {
@@ -5150,15 +5131,15 @@ p {
 .wt-home {
   background-image: url("assets/svg/illustrations/background.svg");
   background-color: #0D4BE3;
-  background-size: 150%;
-  background-position: -10% 45%;
+  background-size: 400%;
+  background-position: 30% 55%;
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
-@media only screen and (max-width: 992px) {
+@media (min-width: 992px) {
   .wt-home {
-    background-size: 400%;
-    background-position: 30% 55%;
+    background-size: 150%;
+    background-position: -10% 45%;
   }
 }
 .wt-home__section {

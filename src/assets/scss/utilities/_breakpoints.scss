@@ -1,4 +1,3 @@
-
 //  ██████╗.██████╗.███████╗.█████╗.██╗..██╗██████╗..██████╗.██╗███╗...██╗████████╗███████╗
 //  ██╔══██╗██╔══██╗██╔════╝██╔══██╗██║.██╔╝██╔══██╗██╔═══██╗██║████╗..██║╚══██╔══╝██╔════╝
 //  ██████╔╝██████╔╝█████╗..███████║█████╔╝.██████╔╝██║...██║██║██╔██╗.██║...██║...███████╗
@@ -7,50 +6,21 @@
 //  ╚═════╝.╚═╝..╚═╝╚══════╝╚═╝..╚═╝╚═╝..╚═╝╚═╝......╚═════╝.╚═╝╚═╝..╚═══╝...╚═╝...╚══════╝
 //  .......................................................................................
 
-@mixin media($breakpoint) {
-  @if $breakpoint == tablet {
-    @media only screen and (min-width: 768px) {
+$breakpoints: (
+  'small': (min-width: 576px), // Small tablets and large smartphones (landscape view)
+  'tablet': (min-width: 768px), // Small tablets (portrait view)
+  'desktop': (min-width: 992px), // Tablets and small desktops
+  'medium': (min-width: 1024px), // Screen medium
+  'large': (min-width: 1200px), // Large tablets and desktops
+  'x-large': (min-width: 1440px), // Screen extra large
+) !default;
+
+@mixin media($breakpoint){
+  @if map-has-key($breakpoints, $breakpoint){
+    @media #{inspect(map-get($breakpoints, $breakpoint))}{
       @content;
     }
-  } @else if $breakpoint == desktop-s {
-    @media only screen and (min-width: 992px) {
-      @content;
-    }
-  } @else if $breakpoint == desktop-m {
-    @media only screen and (min-width: 1200px) {
-      @content;
-    }
-  } @else if $breakpoint == desktop-l {
-    @media only screen and (min-width: 1480px) {
-      @content;
-    }
-  } @else if $breakpoint == desktop-xl {
-    @media only screen and (min-width: 1780px) {
-      @content;
-    }
-  } @else if $breakpoint == mobile-only {
-    @media only screen and (max-width: 992px) {
-      @content;
-    }
-  } @else if $breakpoint == tablet-p-only {
-    @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
-      @content;
-    }
-  } @else if $breakpoint == tablet-l-only {
-    @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
-      @content;
-    }
-  } @else if $breakpoint == desktop-s-only {
-    @media only screen and (min-width: 768px) and (max-width: 1200px) {
-      @content;
-    }
-  } @else if $breakpoint == desktop-m-only {
-    @media only screen and (min-width: 1200px) and (max-width: 1480px) {
-      @content;
-    }
-  } @else if $breakpoint == laptop {
-    @media only screen and (min-width: 992px) and (max-width: 1200px) {
-      @content;
-    }
+  } @else{
+    @warn "Value `#{$breakpoint}` couldn't be recognized. Breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
