@@ -4987,6 +4987,9 @@ p {
 }
 
 .wt-btn {
+  text-decoration: none;
+  line-height: 40px;
+  vertical-align: middle;
   display: block;
   box-sizing: content-box;
   border-top-left-radius: 0;

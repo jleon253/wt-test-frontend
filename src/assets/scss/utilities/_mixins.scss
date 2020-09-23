@@ -45,6 +45,9 @@
 //------ Button -------
 
 @mixin button(){
+  text-decoration: none;
+  line-height: 40px;
+  vertical-align: middle;
   display: block;
   box-sizing: content-box;
   @include b-radius();
