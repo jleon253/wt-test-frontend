@@ -1,40 +1,46 @@
 .wt-home{
   background-image: url('assets/svg/illustrations/background.svg');
   background-color: $c-primary;
-  background-size: 300%;
-  background-position: 30% -250%;
+  background-size: 200%;
+  background-position: 30% 0%;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   @include media('small'){
     background-size: 170%;
     background-position: 0% -100%;
   }
   @include media('tablet'){
-    background-size: 300%;
-    background-position: 15% 60%;
+    background-size: 150%;
+    background-position: 0% 30%;
   }
   @include media('desktop'){
     background-size: 150%;
-    background-position: -10% 150%;
+    background-position: 0% 30%;
   }
   @include media('medium'){
     background-size: 150%;
-    background-position: 0% 150%;
+    background-position: 0% 30%;
   }
   @include media('large'){
     background-size: 150%;
-    background-position: 0% 100%;
+    background-position: 0% 30%;
   }
   &__section{
     position: relative;
     @include media('portrait'){
-      height: 90vh;
+      height: 100%;
     }
     @include media('landscape'){
       height: auto;
     }
-    @include media('small'){
-      height: 90vh;
+    @include media('tablet'){
+      height: 50vh;
+    }
+    @include media('medium'){
+      height: 70vh;
+    }
+    @include media('large'){
+      height: 100vh;
     }
     box-sizing: content-box;
     @include spaceSection();
@@ -71,6 +77,11 @@
     @include media('small'){
       width: 90%;
     }
+    @include media('tablet'){
+      width: 70%;
+      margin: 0px auto;
+      flex-direction: row;
+    }
     @include media('desktop'){
       width: 60%;
       flex-direction: row;
@@ -82,6 +93,10 @@
     img{
       width: 80%;
       margin: 10px 0px;
+      @include media('tablet'){
+        width: 50%;
+        margin: 0px 20px;
+      }
       @include media('desktop'){
         width: 50%;
         margin: 0px 10px;
@@ -100,7 +115,7 @@
     }
     @include media('tablet'){    
       width: 95%;
-      height: 77%;
+      height: 50%;
     }
     @include media('desktop'){
       width: 65%;
@@ -109,5 +124,19 @@
     }
     z-index: 0;
     background-color: $c-other;
+  }
+}
+
+.img-why{
+  position: relative;
+  z-index: 0;
+  object-fit: cover;
+  width: 60%;
+  height: 300px;
+  @include media('large'){
+    object-fit: contain;
+    position: absolute;
+    width: 60%;
+    height: auto;
   }
 }

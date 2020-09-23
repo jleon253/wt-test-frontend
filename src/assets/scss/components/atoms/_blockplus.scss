@@ -1,21 +1,23 @@
 
 .wt-app-blockplus{
   position: absolute;
-  bottom: -5%;
+  width: 25%;
+  bottom: -12%;
   z-index: 5;
-  @include media('large'){
+  @include media('small'){
+    width: 12%;
     bottom: -10%;
   }
   &.left{
     left: 10%;
     @include media('large'){
-      left: 20%;
+      left: 15%;
     }
   }
   &.right{
     right: 10%;
     @include media('large'){
-      right: 20%;
+      right: 15%;
     }
   }
 }

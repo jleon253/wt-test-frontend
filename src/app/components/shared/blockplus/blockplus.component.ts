@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-blockplus',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlockplusComponent implements OnInit {
 
-  constructor() { }
+  @Input() color: string;
+  fill: string;
+  
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.fill = (this.color === 'orange') ? 'rgb(236,78,32)' : 'rgb(255,255,255)';
   }
 
 }

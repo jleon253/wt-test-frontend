@@ -3,6 +3,8 @@
   @include media('desktop'){
     width: 50%;
   }
+  position: relative;
+  z-index: 1;
 }
 
 .wt-bloqText{

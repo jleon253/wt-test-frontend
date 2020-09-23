@@ -5032,11 +5032,13 @@ p {
 
 .wt-app-blockplus {
   position: absolute;
-  bottom: -5%;
+  width: 25%;
+  bottom: -12%;
   z-index: 5;
 }
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
   .wt-app-blockplus {
+    width: 12%;
     bottom: -10%;
   }
 }
@@ -5045,7 +5047,7 @@ p {
 }
 @media (min-width: 1200px) {
   .wt-app-blockplus.left {
-    left: 20%;
+    left: 15%;
   }
 }
 .wt-app-blockplus.right {
@@ -5053,12 +5055,14 @@ p {
 }
 @media (min-width: 1200px) {
   .wt-app-blockplus.right {
-    right: 20%;
+    right: 15%;
   }
 }
 
 .wt-content__bloqText {
   width: 85%;
+  position: relative;
+  z-index: 1;
 }
 @media (min-width: 992px) {
   .wt-content__bloqText {
@@ -5157,10 +5161,10 @@ p {
 .wt-home {
   background-image: url("assets/svg/illustrations/background.svg");
   background-color: #0D4BE3;
-  background-size: 300%;
-  background-position: 30% -250%;
+  background-size: 200%;
+  background-position: 30% 0%;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 @media (min-width: 576px) {
   .wt-home {
@@ -5170,26 +5174,26 @@ p {
 }
 @media (min-width: 768px) {
   .wt-home {
-    background-size: 300%;
-    background-position: 15% 60%;
+    background-size: 150%;
+    background-position: 0% 30%;
   }
 }
 @media (min-width: 992px) {
   .wt-home {
     background-size: 150%;
-    background-position: -10% 150%;
+    background-position: 0% 30%;
   }
 }
 @media (min-width: 1024px) {
   .wt-home {
     background-size: 150%;
-    background-position: 0% 150%;
+    background-position: 0% 30%;
   }
 }
 @media (min-width: 1200px) {
   .wt-home {
     background-size: 150%;
-    background-position: 0% 100%;
+    background-position: 0% 30%;
   }
 }
 .wt-home__section {
@@ -5200,7 +5204,7 @@ p {
 }
 @media (orientation: portrait) {
   .wt-home__section {
-    height: 90vh;
+    height: 100%;
   }
 }
 @media (orientation: landscape) {
@@ -5208,9 +5212,19 @@ p {
     height: auto;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .wt-home__section {
-    height: 90vh;
+    height: 50vh;
+  }
+}
+@media (min-width: 1024px) {
+  .wt-home__section {
+    height: 70vh;
+  }
+}
+@media (min-width: 1200px) {
+  .wt-home__section {
+    height: 100vh;
   }
 }
 @media (min-width: 768px) {
@@ -5260,6 +5274,13 @@ p {
     width: 90%;
   }
 }
+@media (min-width: 768px) {
+  .container-emotions .emotions-side {
+    width: 70%;
+    margin: 0px auto;
+    flex-direction: row;
+  }
+}
 @media (min-width: 992px) {
   .container-emotions .emotions-side {
     width: 60%;
@@ -5270,6 +5291,12 @@ p {
 .container-emotions .emotions-side img {
   width: 80%;
   margin: 10px 0px;
+}
+@media (min-width: 768px) {
+  .container-emotions .emotions-side img {
+    width: 50%;
+    margin: 0px 20px;
+  }
 }
 @media (min-width: 992px) {
   .container-emotions .emotions-side img {
@@ -5295,7 +5322,7 @@ p {
 @media (min-width: 768px) {
   .container-emotions .bkg-emotions {
     width: 95%;
-    height: 77%;
+    height: 50%;
   }
 }
 @media (min-width: 992px) {
@@ -5303,6 +5330,22 @@ p {
     width: 65%;
     height: 100%;
     right: 0;
+  }
+}
+
+.img-why {
+  position: relative;
+  z-index: 0;
+  object-fit: cover;
+  width: 60%;
+  height: 300px;
+}
+@media (min-width: 1200px) {
+  .img-why {
+    object-fit: contain;
+    position: absolute;
+    width: 60%;
+    height: auto;
   }
 }
 
