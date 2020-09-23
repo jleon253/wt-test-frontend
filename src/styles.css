@@ -5000,6 +5000,7 @@ p {
   outline: none;
   text-align: center;
   font-size: 0.88rem;
+  cursor: pointer;
   font-weight: bold;
   transition-property: box-shadow;
   transition-duration: 0.5s;
@@ -5017,24 +5018,27 @@ p {
     font-size: 1.4rem;
   }
 }
-.wt-btn:hover {
-  cursor: pointer;
-  box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.14), 0 1.5px 6px rgba(0, 0, 0, 0.12);
-}
 .wt-btn__primary {
   padding: 0.5rem 2rem;
   background-color: #EC4E20;
   color: #fff;
+}
+.wt-btn__primary:hover {
+  box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.14), 0 1.5px 6px rgba(0, 0, 0, 0.12);
 }
 .wt-btn__light {
   padding: 0.5rem 0px;
   background-color: transparent;
   color: #fff;
   text-decoration: underline;
+  display: inline;
 }
 .wt-btn--small {
   width: 50%;
   height: 20px;
+}
+.wt-btn--small:hover {
+  box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.14), 0 1.5px 6px rgba(0, 0, 0, 0.12);
 }
 
 .wt-content-blockplus {

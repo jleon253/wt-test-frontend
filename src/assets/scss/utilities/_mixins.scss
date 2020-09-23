@@ -55,6 +55,7 @@
   outline: none;
   text-align: center;
   font-size: $f-small;
+  cursor: pointer;
   @include media('large'){
     font-size: $f-normal - 0.2;
   }
@@ -63,10 +64,6 @@
   }
   font-weight: bold;
   @include transition(box-shadow, 0.5s);
-  &:hover{
-    cursor: pointer;
-    @include shadow(1);
-  }
 }
 
 @mixin buttonSize($w:100%,$h:40px){
@@ -76,4 +73,10 @@
 
 @mixin buttonPadding($p-x: $s-button_x, $p-y: $s-button_y){
   padding: $p-y $p-x;
+}
+
+@mixin buttonHover() {
+  &:hover{
+    @include shadow(1);
+  }
 }
