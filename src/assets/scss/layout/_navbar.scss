@@ -46,13 +46,13 @@
   transform: translateY(-150%);
   @include media('desktop'){
     width: 30%;
-    height: 100%;
+    height: calc(100vh - #{$h-navbar});
     right: 0px;
     transform: translateX(100%);
   }
   display: flex;
   justify-content: center;
-  // align-items: center;
+  align-items: center;
   padding: 25px;
   position: fixed;
   z-index: 9;
@@ -75,4 +75,13 @@
 
 .wt-navbar-nav{
   width: auto;
+  .nav-item{
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    @include transition(background-color);
+    &:hover{
+      cursor: pointer;
+      background-color: rgba(0,0,0,0.1);
+    }
+  }
 }

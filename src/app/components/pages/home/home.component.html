@@ -1,5 +1,5 @@
 <main class="wt-home">
-  <section class="wt-section wt-section--first d-flex flex-column justify-content-center">
+  <section id="dashboard" class="wt-section wt-section--first d-flex flex-column justify-content-center">
     <app-bloqtext class="wt-content__bloqText mx-auto" [title]="'Reframing<br/>Economy'" [paragraph]="'Un trabajo de Wunderman Thompson que busca entender cómo las emociones de los colombianos cambian sus comportamientos y afectan la intensión de consumo.'" [align]="'center'"></app-bloqtext>
     <button type="button" class="wt-btn wt-btn__primary mx-auto my-3">Ir al Dashboard</button>
     <p class="small-size text-center mt-3">Scroll to explore</p>
@@ -8,7 +8,7 @@
     </div>
     <app-blockplus class="wt-content-blockplus right" [color]="'orange'"></app-blockplus>
   </section>
-  <section class="wt-section d-flex flex-row align-items-center">
+  <section id="que-es" class="wt-section d-flex flex-row align-items-center">
     <div class="container-emotions">
       <div class="text-side">
         <app-bloqtext [title]="'¿Qué es?'" [paragraph]="'Nuestro proyecto busca traquear esas emociones basándonos en el modelo de Robert Plutchik´s, que trabaja con las 8 emociones centrales y cómo su combinación lleva a nuevas emociones.'" [align]="'left'"></app-bloqtext>
@@ -22,12 +22,12 @@
     </div>
     <app-blockplus class="wt-content-blockplus left" [color]="'orange'"></app-blockplus>
   </section>
-  <section class="wt-section d-flex flex-column-reverse flex-md-row align-items-md-center">
+  <section id="por-que" class="wt-section d-flex flex-column-reverse flex-md-row align-items-md-center">
     <img class="img-why" src="assets/img/img-why.png" alt="why">
     <app-bloqtext class="wt-content__bloqText ml-auto" [title]="'¿Por qué?'" [paragraph]="'El significado del valor esta cambiando los productos y servicios, basicamente porque ese valor esta siendo dominado por emociones modificando las prioridades y valoraciones de los colombianos.'" [align]="'right'"></app-bloqtext>
     <app-blockplus class="wt-content-blockplus right"></app-blockplus>
   </section>
-  <section class="wt-section wt-section--orange h-auto d-flex flex-column py-5">
+  <section id="marcas" class="wt-section wt-section--orange h-auto d-flex flex-column py-5">
     <app-bloqtext class="mx-auto" [title]="'¿Cómo esto ayuda a las marcas?'" [paragraph]="'Esta visión nos ayuda a transformar el journey:'" [align]="'center'"></app-bloqtext>
     <div class="d-flex flex-md-row justify-content-center align-items-center flex-wrap mt-4">
       <app-blurb [imgsrc]="'assets/svg/icons/eye.svg'" [imgType]="'svg'" [title]="'Reconocer'" [desc]="'Reconocer nuevos desencadenantes.'"></app-blurb>
@@ -38,7 +38,7 @@
     </div>
     <app-blockplus class="wt-content-blockplus left"></app-blockplus>
   </section>
-  <section class="wt-section h-auto d-flex flex-column py-5">
+  <section id="uso" class="wt-section h-auto d-flex flex-column py-5">
     <app-bloqtext class="mx-auto" [title]="'¿Cómo usar el dashboard?'" [paragraph]="''" [align]="'center'"></app-bloqtext>
     <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-4">
       <app-blurb [imgsrc]="'assets/img/dash-1.png'" [imgType]="'img'" [title]="''" [desc]="'1. Usa los diferentes selectores y filtros para ver diferentes resultados y análisis.'"></app-blurb>
@@ -49,9 +49,10 @@
       <button type="button" class="wt-btn wt-btn__primary mx-auto my-3">Ir al Dashboard</button>
       <app-blockplus class="wt-content-blockplus right"></app-blockplus>
   </section>
-  <section class="wt-section vh-100 d-flex flex-column justify-content-center">
+  <section id="contacto" class="wt-section vh-100 d-flex flex-column justify-content-center">
     <app-bloqtext class="wt-content__bloqText mx-auto" [title]="'Contacto'" [paragraph]="'Si tienes alguna duda o inquietud por favor no dudes en contactarnos al siguiente correo:'" [align]="'center'"></app-bloqtext>
     <button type="button" class="wt-btn wt-btn__primary mx-auto my-3">data.manager@wundermanthompson.com</button>
   </section>
+  
 </main>
 <app-footer></app-footer>

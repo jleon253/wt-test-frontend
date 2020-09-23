@@ -13,6 +13,7 @@ import { BloqtextComponent } from './components/shared/bloqtext/bloqtext.compone
 import { BlockplusComponent } from './components/shared/blockplus/blockplus.component';
 import { BlurbComponent } from './components/shared/blurb/blurb.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { BacktotopComponent } from './components/shared/backtotop/backtotop.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     BlockplusComponent,
     BlurbComponent,
     FooterComponent,
+    BacktotopComponent,
   ],
   imports: [
     BrowserModule,

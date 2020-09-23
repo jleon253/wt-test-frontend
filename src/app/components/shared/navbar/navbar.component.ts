@@ -7,16 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  menu: any;
+  menuIcon: any;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.menu = document.getElementById('wt-menu');
+    this.menuIcon = document.getElementById('wt-navbar__menuIcon');
   }
 
-  openMenu() {
-    let menu = document.getElementById('wt-menu');
-    let menuIcon = document.getElementById('wt-navbar__menuIcon');
-    menu.classList.toggle('open-menu');
-    menuIcon.classList.toggle('close');
+  toggleMenu() {
+    this.menu.classList.toggle('open-menu');
+    this.menuIcon.classList.toggle('close');
+  }
+
+  scrollView(section: string) {
+    let element = document.getElementById(section);
+    window.scroll({top: element.offsetTop});
+    this.toggleMenu();
   }
 
 }
