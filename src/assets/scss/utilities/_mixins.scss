@@ -7,7 +7,7 @@
 //  ...........................................
 
 @mixin spaceSection(){
-  padding: ($s-section_y / 2) ($s-section_x / 2);
+  padding: ($s-section_y / 2) $s-section_x;
   @include media('tablet'){
     padding: $s-section_y $s-section_x;
   }

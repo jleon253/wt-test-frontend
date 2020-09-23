@@ -6,7 +6,7 @@
     @include b-radius(100%, 100%, 100%, 100%);
     background-color: $c-w;
     box-sizing: content-box;
-    padding: 5px;
+    padding: 2px;
     &.img{
       img{
         width: 100%;
@@ -19,5 +19,9 @@
         width: 50%;
       }
     }
+  }
+  &__desc{
+    width: 90%;
+    word-break: break-word;
   }
 }

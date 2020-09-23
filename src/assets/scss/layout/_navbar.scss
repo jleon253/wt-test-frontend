@@ -7,6 +7,12 @@
 //  ...................................................
 
 .wt-navbar{
+  height: $h-navbar - 5vh;
+  padding: 1rem $s-section_x;
+  @include media('medium'){
+    height: $h-navbar;
+    padding: 2rem $s-section_x;
+  }
   background-color: $c-primary_dark;
   color: $c-w;
   display: flex;
@@ -15,7 +21,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  @include spaceSection();
+  box-sizing: border-box;
   @include transition(padding);
   &__menuIcon{
     .closeIcon{

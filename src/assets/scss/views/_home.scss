@@ -42,7 +42,13 @@
     @include media('large'){
       height: 100vh;
     }
-    box-sizing: content-box;
+    &--first{
+      height: calc(100vh - #{$h-navbar - 5vh});
+      @include media('medium'){
+        height: calc(100vh - #{$h-navbar});
+      }
+    }
+    box-sizing: border-box;
     @include spaceSection();
     color: $c-w;
     &--blue{

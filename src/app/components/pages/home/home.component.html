@@ -1,12 +1,12 @@
-<div class="wt-home">
-  <section class="wt-home__section vh-100 d-flex flex-column justify-content-center">
+<main class="wt-home">
+  <section class="wt-home__section wt-home__section--first d-flex flex-column justify-content-center">
     <app-bloqtext class="wt-content__bloqText mx-auto" [title]="'Reframing<br/>Economy'" [paragraph]="'Un trabajo de Wunderman Thompson que busca entender cómo las emociones de los colombianos cambian sus comportamientos y afectan la intensión de consumo.'" [align]="'center'"></app-bloqtext>
     <button type="button" class="wt-btn wt-btn__primary mx-auto my-3">Ir al Dashboard</button>
     <p class="small-size text-center mt-3">Scroll to explore</p>
     <div class="scrollIcon text-center">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g transform="translate(503.75 -1205.341)"><g transform="translate(-503.75 1205.341)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"><circle cx="15" cy="15" r="15" stroke="none"/><circle cx="15" cy="15" r="14.5" fill="none"/></g><path d="M-485.319,1214.159l-7.4,7.4-7.4-7.4" transform="translate(3.966 5.497)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/></g></svg>
     </div>
-    <app-blockplus class="wt-app-blockplus right" [color]="'orange'"></app-blockplus>
+    <app-blockplus class="wt-content-blockplus right" [color]="'orange'"></app-blockplus>
   </section>
   <section class="wt-home__section d-flex flex-row align-items-center">
     <div class="container-emotions">
@@ -20,12 +20,12 @@
       </div>
       <div class="bkg-emotions"></div>
     </div>
-    <app-blockplus class="wt-app-blockplus left" [color]="'orange'"></app-blockplus>
+    <app-blockplus class="wt-content-blockplus left" [color]="'orange'"></app-blockplus>
   </section>
   <section class="wt-home__section d-flex flex-column-reverse flex-md-row align-items-md-center">
     <img class="img-why" src="assets/img/img-why.png" alt="why">
     <app-bloqtext class="wt-content__bloqText ml-auto" [title]="'¿Por qué?'" [paragraph]="'El significado del valor esta cambiando los productos y servicios, basicamente porque ese valor esta siendo dominado por emociones modificando las prioridades y valoraciones de los colombianos.'" [align]="'right'"></app-bloqtext>
-    <app-blockplus class="wt-app-blockplus right"></app-blockplus>
+    <app-blockplus class="wt-content-blockplus right"></app-blockplus>
   </section>
   <section class="wt-home__section wt-home__section--orange h-auto d-flex flex-column py-5">
     <app-bloqtext class="mx-auto" [title]="'¿Cómo esto ayuda a las marcas?'" [paragraph]="'Esta visión nos ayuda a transformar el journey:'" [align]="'center'"></app-bloqtext>
@@ -36,5 +36,21 @@
       <app-blurb [imgsrc]="'assets/svg/icons/balance.svg'" [imgType]="'svg'" [title]="'Reequilibrar'" [desc]="'Reequilibrar la emoción.'"></app-blurb>
       <app-blurb [imgsrc]="'assets/svg/icons/imagination.svg'" [imgType]="'svg'" [title]="'Reimaginar'" [desc]="'Reimaginar escenarios.'"></app-blurb>
     </div>
+    <app-blockplus class="wt-content-blockplus left"></app-blockplus>
   </section>
-</div>
+  <section class="wt-home__section h-auto d-flex flex-column py-5">
+    <app-bloqtext class="mx-auto" [title]="'¿Cómo usar el dashboard?'" [paragraph]="''" [align]="'center'"></app-bloqtext>
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-4">
+      <app-blurb [imgsrc]="'assets/img/dash-1.png'" [imgType]="'img'" [title]="''" [desc]="'1. Usa los diferentes selectores y filtros para ver diferentes resultados y análisis.'"></app-blurb>
+      <app-blurb [imgsrc]="'assets/img/dash-2.png'" [imgType]="'img'" [title]="''" [desc]="'2. Navega entre las distintas pestañas para encontrar lo que estas buscando.'"></app-blurb>
+      <app-blurb [imgsrc]="'assets/img/dash-3.png'" [imgType]="'img'" [title]="''" [desc]="'3. También puedes escuchar los análisis con los principales insights, haciendo clic en el botón de audio.'"></app-blurb>
+    </div>
+      <app-bloqtext class="mx-auto" [title]="''" [paragraph]="'Ya estas listo para ingresar y visualizar toda la información presentada.'" [align]="'center'"></app-bloqtext>
+      <button type="button" class="wt-btn wt-btn__primary mx-auto my-3">Ir al Dashboard</button>
+      <app-blockplus class="wt-content-blockplus right"></app-blockplus>
+  </section>
+  <section class="wt-home__section h-auto d-flex flex-column justify-content-center">
+    <app-bloqtext class="wt-content__bloqText mx-auto" [title]="'Contacto'" [paragraph]="'Si tienes alguna duda o inquietud por favor no dudes en contactarnos al siguiente correo:'" [align]="'center'"></app-bloqtext>
+    <button type="button" class="wt-btn wt-btn__primary mx-auto my-3">data.manager@wundermanthompson.com</button>
+  </section>
+</main>
