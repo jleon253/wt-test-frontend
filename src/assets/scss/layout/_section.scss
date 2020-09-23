@@ -1,5 +1,4 @@
 .wt-section{
-  color: $c-w;
   position: relative;
   box-sizing: border-box;
   @include spaceSection();
@@ -26,8 +25,50 @@
   }
   &--blue{
     background-color: $c-primary;
+    color: $c-w;
   }
   &--orange{
     background-color: $c-secondary;
+    color: $c-w;
+  }
+  &--muted{
+    .wt-content__bloqText{
+      .wt-bloqText{
+        &__title{
+          color: $c-primary;
+        }
+        &__paragraph{
+          color: $c-txt;
+        }
+      }
+    }
+  }
+  &--banner{
+    width: 100%;
+    height: 50vh;
+    color: $c-w;
+    .banner{
+      &__img, &__overlayer{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      &__img{
+        object-fit: cover;
+        z-index: 0;
+      }
+      &__overlayer{
+        background-color: rgba(0,0,0,0.5);
+      }
+      &__title{
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+      }
+    }
   }
 }
