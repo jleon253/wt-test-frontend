@@ -13,7 +13,6 @@ export class NavbarComponent implements OnInit, AfterContentChecked {
   showMenu: boolean = true;
 
   constructor(private _router: Router) { 
-    console.log(_router);
   }
 
   ngOnInit(): void {
@@ -24,7 +23,6 @@ export class NavbarComponent implements OnInit, AfterContentChecked {
   ngAfterContentChecked(): void{
     this.showMenu = (this._router.url === "/") ? true : false;
   }
-
 
   toggleMenu() {
     this.menu.classList.toggle('open-menu');
