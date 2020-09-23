@@ -5087,7 +5087,7 @@ p {
 
 .wt-content-backToTop {
   position: absolute;
-  top: 200vh;
+  top: 100vh;
   right: 1rem;
   bottom: 0;
   cursor: pointer;
@@ -5097,6 +5097,12 @@ p {
   position: sticky;
   top: calc(100vh - 5rem);
   display: inline-block;
+  box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.14), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .wt-content__bloqText {
@@ -5298,6 +5304,12 @@ p {
   color: #0D4BE3;
 }
 .wt-section--muted .wt-content__bloqText .wt-bloqText__paragraph {
+  color: #A2A2A2;
+}
+.wt-section--muted .wt-blurb__title {
+  color: #0D4BE3;
+}
+.wt-section--muted .wt-blurb__desc {
   color: #A2A2A2;
 }
 .wt-section--banner {

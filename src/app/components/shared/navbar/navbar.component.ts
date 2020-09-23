@@ -16,11 +16,11 @@ export class NavbarComponent implements OnInit, AfterContentChecked {
   }
 
   ngOnInit(): void {
-    this.menu = document.getElementById('wt-menu');
-    this.menuIcon = document.getElementById('wt-navbar__menuIcon');
   }
 
   ngAfterContentChecked(): void{
+    this.menu = document.getElementById('wt-menu');
+    this.menuIcon = document.getElementById('wt-navbar__menuIcon');
     this.showMenu = (this._router.url === "/") ? true : false;
   }
 

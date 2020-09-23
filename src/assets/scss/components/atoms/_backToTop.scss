@@ -2,7 +2,7 @@ $scrollLength: 100vh;
 
 .wt-content-backToTop{
   position: absolute;
-  top: $scrollLength * 2;
+  top: $scrollLength;
   right: 1rem;
   bottom: 0;
   cursor: pointer;
@@ -11,5 +11,8 @@ $scrollLength: 100vh;
     position: sticky;
     top: calc(#{$scrollLength} - 5rem);
     display: inline-block;
+    @include shadow(1);
+    @include b-radius(100%,100%,100%,100%);
+    background-color: rgba(0,0,0,0.2);
   }
 }
