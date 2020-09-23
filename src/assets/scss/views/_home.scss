@@ -1,15 +1,41 @@
 .wt-home{
   background-image: url('assets/svg/illustrations/background.svg');
   background-color: $c-primary;
-  background-size: 400%;
-  background-position: 30% 55%;
+  background-size: 300%;
+  background-position: 30% -250%;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  @include media('small'){
+    background-size: 170%;
+    background-position: 0% -100%;
+  }
+  @include media('tablet'){
+    background-size: 300%;
+    background-position: 15% 60%;
+  }
   @include media('desktop'){
     background-size: 150%;
-    background-position: -10% 45%;
+    background-position: -10% 150%;
+  }
+  @include media('medium'){
+    background-size: 150%;
+    background-position: 0% 150%;
+  }
+  @include media('large'){
+    background-size: 150%;
+    background-position: 0% 100%;
   }
   &__section{
+    position: relative;
+    @include media('portrait'){
+      height: 90vh;
+    }
+    @include media('landscape'){
+      height: auto;
+    }
+    @include media('small'){
+      height: 90vh;
+    }
     box-sizing: content-box;
     @include spaceSection();
     color: $c-w;
@@ -42,6 +68,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @include media('small'){
+      width: 90%;
+    }
     @include media('desktop'){
       width: 60%;
       flex-direction: row;
@@ -65,6 +94,10 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    @include media('small'){    
+      width: 85%;
+      height: 80%;
+    }
     @include media('tablet'){    
       width: 95%;
       height: 77%;

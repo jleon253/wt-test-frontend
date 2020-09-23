@@ -1,3 +1,4 @@
+
 //  ██████╗.██████╗.███████╗.█████╗.██╗..██╗██████╗..██████╗.██╗███╗...██╗████████╗███████╗
 //  ██╔══██╗██╔══██╗██╔════╝██╔══██╗██║.██╔╝██╔══██╗██╔═══██╗██║████╗..██║╚══██╔══╝██╔════╝
 //  ██████╔╝██████╔╝█████╗..███████║█████╔╝.██████╔╝██║...██║██║██╔██╗.██║...██║...███████╗
@@ -13,6 +14,8 @@ $breakpoints: (
   'medium': (min-width: 1024px), // Screen medium
   'large': (min-width: 1200px), // Large tablets and desktops
   'x-large': (min-width: 1440px), // Screen extra large
+  'portrait': (orientation: portrait), // Vertical
+  'landscape': (orientation: landscape), // Horizontal
 ) !default;
 
 @mixin media($breakpoint){

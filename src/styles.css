@@ -5030,6 +5030,33 @@ p {
   height: 20px;
 }
 
+.wt-app-blockplus {
+  position: absolute;
+  bottom: -5%;
+  z-index: 5;
+}
+@media (min-width: 1200px) {
+  .wt-app-blockplus {
+    bottom: -10%;
+  }
+}
+.wt-app-blockplus.left {
+  left: 10%;
+}
+@media (min-width: 1200px) {
+  .wt-app-blockplus.left {
+    left: 20%;
+  }
+}
+.wt-app-blockplus.right {
+  right: 10%;
+}
+@media (min-width: 1200px) {
+  .wt-app-blockplus.right {
+    right: 20%;
+  }
+}
+
 .wt-content__bloqText {
   width: 85%;
 }
@@ -5130,21 +5157,61 @@ p {
 .wt-home {
   background-image: url("assets/svg/illustrations/background.svg");
   background-color: #0D4BE3;
-  background-size: 400%;
-  background-position: 30% 55%;
+  background-size: 300%;
+  background-position: 30% -250%;
   background-repeat: no-repeat;
   background-attachment: scroll;
+}
+@media (min-width: 576px) {
+  .wt-home {
+    background-size: 170%;
+    background-position: 0% -100%;
+  }
+}
+@media (min-width: 768px) {
+  .wt-home {
+    background-size: 300%;
+    background-position: 15% 60%;
+  }
 }
 @media (min-width: 992px) {
   .wt-home {
     background-size: 150%;
-    background-position: -10% 45%;
+    background-position: -10% 150%;
+  }
+}
+@media (min-width: 1024px) {
+  .wt-home {
+    background-size: 150%;
+    background-position: 0% 150%;
+  }
+}
+@media (min-width: 1200px) {
+  .wt-home {
+    background-size: 150%;
+    background-position: 0% 100%;
   }
 }
 .wt-home__section {
+  position: relative;
   box-sizing: content-box;
   padding: 15px 50px;
   color: #fff;
+}
+@media (orientation: portrait) {
+  .wt-home__section {
+    height: 90vh;
+  }
+}
+@media (orientation: landscape) {
+  .wt-home__section {
+    height: auto;
+  }
+}
+@media (min-width: 576px) {
+  .wt-home__section {
+    height: 90vh;
+  }
 }
 @media (min-width: 768px) {
   .wt-home__section {
@@ -5188,6 +5255,11 @@ p {
   box-sizing: content-box;
   z-index: 1;
 }
+@media (min-width: 576px) {
+  .container-emotions .emotions-side {
+    width: 90%;
+  }
+}
 @media (min-width: 992px) {
   .container-emotions .emotions-side {
     width: 60%;
@@ -5213,6 +5285,12 @@ p {
   right: 0;
   z-index: 0;
   background-color: #391393;
+}
+@media (min-width: 576px) {
+  .container-emotions .bkg-emotions {
+    width: 85%;
+    height: 80%;
+  }
 }
 @media (min-width: 768px) {
   .container-emotions .bkg-emotions {

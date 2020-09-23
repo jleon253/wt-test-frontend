@@ -10,6 +10,7 @@ import { ErrorComponent } from './components/pages/error/error.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { TheoryComponent } from './components/pages/theory/theory.component';
 import { BloqtextComponent } from './components/shared/bloqtext/bloqtext.component';
+import { BlockplusComponent } from './components/shared/blockplus/blockplus.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { BloqtextComponent } from './components/shared/bloqtext/bloqtext.compone
     NavbarComponent,
     TheoryComponent,
     BloqtextComponent,
+    BlockplusComponent,
   ],
   imports: [
     BrowserModule,

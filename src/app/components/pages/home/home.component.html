@@ -1,13 +1,14 @@
 <div class="wt-home">
-  <section class="wt-home__section vh-100 d-flex flex-column justify-content-center">
+  <section class="wt-home__section d-flex flex-column justify-content-center">
     <app-bloqtext class="wt-content__bloqText mx-auto" [title]="'Reframing<br/>Economy'" [paragraph]="'Un trabajo de Wunderman Thompson que busca entender cómo las emociones de los colombianos cambian sus comportamientos y afectan la intensión de consumo.'" [align]="'center'"></app-bloqtext>
     <button type="button" class="wt-btn wt-btn__primary mx-auto my-3">Ir al Dashboard</button>
     <p class="small-size text-center mt-3">Scroll to explore</p>
     <div class="scrollIcon text-center">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g transform="translate(503.75 -1205.341)"><g transform="translate(-503.75 1205.341)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"><circle cx="15" cy="15" r="15" stroke="none"/><circle cx="15" cy="15" r="14.5" fill="none"/></g><path d="M-485.319,1214.159l-7.4,7.4-7.4-7.4" transform="translate(3.966 5.497)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/></g></svg>
     </div>
+    <app-blockplus class="wt-app-blockplus right"></app-blockplus>
   </section>
-  <section class="wt-home__section vh-100 d-flex flex-row align-center">
+  <section class="wt-home__section d-flex flex-row align-center">
     <div class="container-emotions">
       <div class="text-side">
         <app-bloqtext [title]="'¿Qué es?'" [paragraph]="'Nuestro proyecto busca traquear esas emociones basándonos en el modelo de Robert Plutchik´s, que trabaja con las 8 emociones centrales y cómo su combinación lleva a nuevas emociones.
@@ -20,5 +21,6 @@
       </div>
       <div class="bkg-emotions"></div>
     </div>
+    <app-blockplus class="wt-app-blockplus left"></app-blockplus>
   </section>
 </div>
