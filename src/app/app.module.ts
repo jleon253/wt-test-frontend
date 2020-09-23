@@ -12,6 +12,7 @@ import { TheoryComponent } from './components/pages/theory/theory.component';
 import { BloqtextComponent } from './components/shared/bloqtext/bloqtext.component';
 import { BlockplusComponent } from './components/shared/blockplus/blockplus.component';
 import { BlurbComponent } from './components/shared/blurb/blurb.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { BlurbComponent } from './components/shared/blurb/blurb.component';
     BloqtextComponent,
     BlockplusComponent,
     BlurbComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

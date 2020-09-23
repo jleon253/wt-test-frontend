@@ -1,62 +1,29 @@
 .wt-home{
   background-image: url('assets/svg/illustrations/background.svg');
   background-color: $c-primary;
-  background-size: 200%;
-  background-position: 30% 0%;
+  background-size: 500%;
+  background-position: 35% 52%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   @include media('small'){
-    background-size: 170%;
-    background-position: 0% -100%;
+    background-size: 400%;
+    background-position: 35% 50%;
   }
   @include media('tablet'){
-    background-size: 150%;
-    background-position: 0% 30%;
+    background-size: 300%;
+    background-position: 35% 50%;
   }
   @include media('desktop'){
-    background-size: 150%;
-    background-position: 0% 30%;
+    background-size: 220%;
+    background-position: 30% 50%;
   }
   @include media('medium'){
-    background-size: 150%;
-    background-position: 0% 30%;
+    background-size: 230%;
+    background-position: 30% 50%;
   }
   @include media('large'){
     background-size: 150%;
-    background-position: 0% 30%;
-  }
-  &__section{
-    position: relative;
-    @include media('portrait'){
-      height: 100%;
-    }
-    @include media('landscape'){
-      height: auto;
-    }
-    @include media('tablet'){
-      height: 50vh;
-    }
-    @include media('medium'){
-      height: 70vh;
-    }
-    @include media('large'){
-      height: 100vh;
-    }
-    &--first{
-      height: calc(100vh - #{$h-navbar - 5vh});
-      @include media('medium'){
-        height: calc(100vh - #{$h-navbar});
-      }
-    }
-    box-sizing: border-box;
-    @include spaceSection();
-    color: $c-w;
-    &--blue{
-      background-color: $c-primary;
-    }
-    &--orange{
-      background-color: $c-secondary;
-    }
+    background-position: 0% 45%;
   }
 }
 .container-emotions{

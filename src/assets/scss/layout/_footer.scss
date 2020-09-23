@@ -1,0 +1,8 @@
+.wt-footer{
+  background-color: $c-primary_dark;
+  color: $c-w;
+  padding: 1rem $s-section_x;
+  @include media('medium'){
+    padding: 2rem $s-section_x;
+  }
+}

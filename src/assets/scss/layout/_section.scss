@@ -1,0 +1,33 @@
+.wt-section{
+  color: $c-w;
+  position: relative;
+  box-sizing: border-box;
+  @include spaceSection();
+  @include media('portrait'){
+    height: 100%;
+  }
+  @include media('landscape'){
+    height: auto;
+  }
+  @include media('tablet'){
+    height: 50vh;
+  }
+  @include media('medium'){
+    height: 70vh;
+  }
+  @include media('large'){
+    height: 100vh;
+  }
+  &--first{
+    height: calc(100vh - #{$h-navbar - 5vh});
+    @include media('medium'){
+      height: calc(100vh - #{$h-navbar});
+    }
+  }
+  &--blue{
+    background-color: $c-primary;
+  }
+  &--orange{
+    background-color: $c-secondary;
+  }
+}
