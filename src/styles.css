@@ -5071,7 +5071,7 @@ p {
 }
 
 .wt-bloqText__title {
-  word-break: break-all;
+  word-break: break-word;
   white-space: pre-wrap;
 }
 .wt-bloqText__paragraph {
@@ -5085,6 +5085,32 @@ p {
 }
 .wt-bloqText.right {
   text-align: right;
+}
+
+.wt-blurb {
+  margin: 15px;
+}
+.wt-blurb__icon {
+  width: 150px;
+  height: 150px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background-color: #fff;
+  box-sizing: content-box;
+  padding: 5px;
+}
+.wt-blurb__icon.img img {
+  width: 100%;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  object-fit: cover;
+}
+.wt-blurb__icon.svg img {
+  width: 50%;
 }
 
 .wt-navbar {

@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { TheoryComponent } from './components/pages/theory/theory.component';
 import { BloqtextComponent } from './components/shared/bloqtext/bloqtext.component';
 import { BlockplusComponent } from './components/shared/blockplus/blockplus.component';
+import { BlurbComponent } from './components/shared/blurb/blurb.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BlockplusComponent } from './components/shared/blockplus/blockplus.comp
     TheoryComponent,
     BloqtextComponent,
     BlockplusComponent,
+    BlurbComponent,
   ],
   imports: [
     BrowserModule,

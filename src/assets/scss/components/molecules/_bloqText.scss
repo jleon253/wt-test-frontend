@@ -9,7 +9,7 @@
 
 .wt-bloqText{
   &__title{
-    word-break: break-all;
+    word-break: break-word;
     white-space: pre-wrap;
   }
   &__paragraph{

@@ -1,0 +1,7 @@
+<div class="wt-blurb d-flex flex-column justify-content-center align-items-center text-center">
+  <div class="wt-blurb__icon d-flex justify-content-center" [ngClass]="{'img': imgType === 'img','svg': imgType === 'svg'}">
+    <img [src]="imgsrc" [alt]="title">
+  </div>
+  <h3 class="wt-blurb__title bold big-size mt-3 mb-0">{{title}}</h3>
+  <p class="wt-blurb__desc light normal-size mt-0 mb-2">{{desc}}</p>
+</div>
