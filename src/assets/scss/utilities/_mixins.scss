@@ -47,7 +47,6 @@
 @mixin button(){
   display: block;
   box-sizing: content-box;
-  padding: $s-button_y $s-button_x;
   @include b-radius();
   border: none;
   outline: none;
@@ -70,4 +69,8 @@
 @mixin buttonSize($w:100%,$h:40px){
   width: $w;
   height: $h;
+}
+
+@mixin buttonPadding($p-x: $s-button_x, $p-y: $s-button_y){
+  padding: $p-y $p-x;
 }

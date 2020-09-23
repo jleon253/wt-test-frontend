@@ -1,8 +1,11 @@
-.wt-bloqText{
-  width: 80%;
-  @include media('tablet'){
+.wt-content__bloqText{
+  width: 85%;
+  @include media('desktop'){
     width: 50%;
   }
+}
+
+.wt-bloqText{
   &__title{
     word-break: break-all;
     white-space: pre-wrap;
@@ -11,18 +14,12 @@
     word-wrap: break-word;
   }
   &.center{
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
   }
   &.left{
-    margin-left: 0px;
-    margin-right: auto;
     text-align: left;
   }
   &.right{
-    margin-left: auto;
-    margin-right: 0px;
     text-align: right;
   }
 }
