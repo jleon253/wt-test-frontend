@@ -1,0 +1,82 @@
+//  ███╗...███╗██╗██╗..██╗██╗███╗...██╗███████╗
+//  ████╗.████║██║╚██╗██╔╝██║████╗..██║██╔════╝
+//  ██╔████╔██║██║.╚███╔╝.██║██╔██╗.██║███████╗
+//  ██║╚██╔╝██║██║.██╔██╗.██║██║╚██╗██║╚════██║
+//  ██║.╚═╝.██║██║██╔╝.██╗██║██║.╚████║███████║
+//  ╚═╝.....╚═╝╚═╝╚═╝..╚═╝╚═╝╚═╝..╚═══╝╚══════╝
+//  ...........................................
+
+@mixin spaceSection(){
+  padding: ($s-section_y / 2) $s-section_x;
+  @include media('tablet'){
+    padding: $s-section_y $s-section_x;
+  }
+}
+
+//------ Transition -------
+
+@mixin transition($props: all, $time: 0.5s){
+  transition-property: $props;
+  transition-duration: $time;
+  transition-timing-function: ease-in-out;
+}
+
+//------ Border Radius -------
+
+@mixin b-radius($tl:0, $tr:0, $bl:0, $br:0){
+  border-top-left-radius: $tl;
+  border-top-right-radius: $tr;
+  border-bottom-left-radius: $bl;
+  border-bottom-right-radius: $br;
+}
+
+//------ Shadows --------
+
+@mixin shadow($depth) {
+  @if $depth < 1 {
+    box-shadow: none;
+  } @else if $depth > 5 {
+    @warn "Invalid $depth `#{$depth}` for mixin `shadow`.";
+  } @else {
+    box-shadow: bottom-shadow($depth), top-shadow($depth);
+  }
+}
+
+//------ Button -------
+
+@mixin button(){
+  text-decoration: none;
+  line-height: 40px;
+  vertical-align: middle;
+  display: block;
+  box-sizing: content-box;
+  @include b-radius();
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: $f-small;
+  cursor: pointer;
+  @include media('large'){
+    font-size: $f-normal - 0.2;
+  }
+  @include media('x-large'){
+    font-size: $f-normal;
+  }
+  font-weight: bold;
+  @include transition(box-shadow, 0.5s);
+}
+
+@mixin buttonSize($w:100%,$h:40px){
+  width: $w;
+  height: $h;
+}
+
+@mixin buttonPadding($p-x: $s-button_x, $p-y: $s-button_y){
+  padding: $p-y $p-x;
+}
+
+@mixin buttonHover() {
+  &:hover{
+    @include shadow(1);
+  }
+}

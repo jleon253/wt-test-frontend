@@ -1,0 +1,30 @@
+
+.wt-content-blockplus{
+  position: absolute;
+  width: 100px;
+  bottom: -4%;
+  z-index: 1;
+  @include media('small'){
+    width: 100px;
+    bottom: -8%;
+  }
+  @include media('medium'){
+    width: 120px;
+    bottom: -10%;
+  }
+  @include media('large'){
+    width: 150px;
+  }
+  &.left{
+    left: 5%;
+    @include media('large'){
+      left: 12%;
+    }
+  }
+  &.right{
+    right: 5%;
+    @include media('large'){
+      right: 12%;
+    }
+  }
+}

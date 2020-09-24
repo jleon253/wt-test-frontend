@@ -1,0 +1,117 @@
+.wt-home{
+  color: $c-w;
+  position: relative;
+  background-image: url('assets/svg/illustrations/background.svg');
+  background-color: $c-primary;
+  background-size: 500%;
+  background-position: 35% 52%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  @include media('small'){
+    background-size: 400%;
+    background-position: 35% 50%;
+  }
+  @include media('tablet'){
+    background-size: 300%;
+    background-position: 35% 50%;
+  }
+  @include media('desktop'){
+    background-size: 220%;
+    background-position: 30% 50%;
+  }
+  @include media('medium'){
+    background-size: 230%;
+    background-position: 30% 50%;
+  }
+  @include media('large'){
+    background-size: 150%;
+    background-position: 0% 45%;
+  }
+}
+.container-emotions{
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  @include media('desktop'){
+    flex-direction: row;
+    padding: 50px 0px;
+  }
+  position: relative;
+  .text-side{
+    width: 80%;
+    @include media('desktop'){
+      width: 40%;
+    }
+    z-index: 1;
+  }
+  .emotions-side{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include media('small'){
+      width: 90%;
+    }
+    @include media('tablet'){
+      width: 70%;
+      margin: 0px auto;
+      flex-direction: row;
+    }
+    @include media('desktop'){
+      width: 60%;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    padding: 20px;
+    box-sizing: content-box;
+    z-index: 1;
+    img{
+      width: 80%;
+      margin: 10px 0px;
+      @include media('tablet'){
+        width: 50%;
+        margin: 0px 20px;
+      }
+      @include media('desktop'){
+        width: 50%;
+        margin: 0px 10px;
+      }
+    }
+  }
+  .bkg-emotions{
+    width: 90%;
+    height: 65%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    @include media('small'){    
+      width: 85%;
+      height: 80%;
+    }
+    @include media('tablet'){    
+      width: 95%;
+      height: 50%;
+    }
+    @include media('desktop'){
+      width: 65%;
+      height: 100%;
+      right: 0;
+    }
+    z-index: 0;
+    background-color: $c-other;
+  }
+}
+
+.img-why{
+  position: relative;
+  z-index: 0;
+  object-fit: cover;
+  width: 60%;
+  height: 300px;
+  @include media('large'){
+    object-fit: contain;
+    position: absolute;
+    width: 60%;
+    height: auto;
+  }
+}

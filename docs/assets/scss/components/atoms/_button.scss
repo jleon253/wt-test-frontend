@@ -1,0 +1,29 @@
+//  ██████╗.██╗...██╗████████╗████████╗.██████╗.███╗...██╗
+//  ██╔══██╗██║...██║╚══██╔══╝╚══██╔══╝██╔═══██╗████╗..██║
+//  ██████╔╝██║...██║...██║......██║...██║...██║██╔██╗.██║
+//  ██╔══██╗██║...██║...██║......██║...██║...██║██║╚██╗██║
+//  ██████╔╝╚██████╔╝...██║......██║...╚██████╔╝██║.╚████║
+//  ╚═════╝..╚═════╝....╚═╝......╚═╝....╚═════╝.╚═╝..╚═══╝
+//  ......................................................
+
+.wt-btn{
+  @include button();
+  @include buttonSize(auto);
+  &__primary{
+    @include buttonPadding();
+    @include buttonHover();
+    background-color: $c-secondary;
+    color: $c-w;
+  }
+  &__light{
+    @include buttonPadding(0px);
+    background-color: $c-t;
+    color: $c-w;
+    text-decoration: underline;
+    display: inline;
+  }
+  &--small{
+    @include buttonSize(50%,20px);
+    @include buttonHover();
+  }
+}

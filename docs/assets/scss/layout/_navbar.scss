@@ -1,0 +1,91 @@
+//  ███╗...██╗.█████╗.██╗...██╗██████╗..█████╗.██████╗.
+//  ████╗..██║██╔══██╗██║...██║██╔══██╗██╔══██╗██╔══██╗
+//  ██╔██╗.██║███████║██║...██║██████╔╝███████║██████╔╝
+//  ██║╚██╗██║██╔══██║╚██╗.██╔╝██╔══██╗██╔══██║██╔══██╗
+//  ██║.╚████║██║..██║.╚████╔╝.██████╔╝██║..██║██║..██║
+//  ╚═╝..╚═══╝╚═╝..╚═╝..╚═══╝..╚═════╝.╚═╝..╚═╝╚═╝..╚═╝
+//  ...................................................
+
+.wt-navbar{
+  height: $h-navbar;
+  padding: 1rem $s-section_x;
+  @include media('medium'){
+    height: $h-navbar;
+    padding: 2rem $s-section_x;
+  }
+  background-color: $c-primary_dark;
+  color: $c-w;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-sizing: border-box;
+  @include transition(padding);
+  &__menuIcon{
+    .closeIcon{
+      display: none;
+    }
+    &.close{
+      .openIcon{
+        display: none;
+      }
+      .closeIcon{
+        display: block;
+      }
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.wt-menu{
+  width: 100%;
+  transform: translateY(-150%);
+  @include media('desktop'){
+    width: 30%;
+    height: calc(100vh - #{$h-navbar});
+    right: 0px;
+    transform: translateX(100%);
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  position: fixed;
+  z-index: 9;
+  opacity: 0;
+  box-sizing: border-box;
+  background-color: $c-primary_dark;
+  color: $c-w;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  @include shadow(2);
+  @include transition();
+}
+
+.open-menu{
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.wt-navbar-nav{
+  width: auto;
+  .nav-item{
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    @include transition(background-color);
+    &:hover{
+      cursor: pointer;
+      background-color: rgba(0,0,0,0.1);
+    }
+    .nav-link{
+      display: block;
+      width: 100%;
+    }
+  }
+}

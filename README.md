@@ -1,4 +1,89 @@
-# WTTestFrontEnd
+# Wunderman Thompson TestFrontEnd
+
+This project is a technical test for Job as Front End Developer in Wunderman Thompson.
+
+Demo:
+
+### Dev tools used:
+> - HTML, CSS (SASS), SVG, normalize.css
+> - ES6, Angular 9, TypeScript
+> - **NPM Dependencies:** bootstrap-4-grid, SASS Compiler, AnimationCss
+
+***  
+
+### Extra functions:
+> - Menu in Desktop view
+> - Theory page (/theory)
+> - Comments page (/comments)
+> - 500 Page (/error)
+> - 404 Page (/other-route)
+> - Send mail in Contact Section
+> - Scroll to top and Smooth Scroll
+> - Data model for API Rest in TypeScript
+> - Animations
+> - Small GitFlow
+> - Small Atomic Design
+
+***  
+
+### UI Kit:
+Pages
+> Home
+> - .wt-home (for add this background with the plus icon)
+> ~~~
+> <main class="wt-home">
+> ~~~
+
+Components
+> Navbar
+> ~~~
+> <app-navbar></app-navbar>
+> ~~~
+
+> Footer
+> ~~~
+> <app-footer></app-footer>
+> ~~~
+
+> Blurb
+> ~~~
+> <app-blurb [imgsrc][imgType][title][desc]></app-blurb>
+> ~~~
+> - imgsrc: image url
+> - imgType: image type (svg or img)
+> - title: title blurb
+> - desc: description blurb
+
+> Bloqtext
+> ~~~
+> <app-bloqtext [title][paragraph][align]></app-bloqtext>
+> ~~~
+> - title: title to show
+> - paragraph: description block
+> - align: align text (left, center, right)
+
+> Blockplus
+> ~~~
+> <app-blockplus [color]></app-blockplus>
+> ~~~
+> - color: color plus symbols (orange or white)
+
+> Backtotop
+> ~~~
+> <app-backtotop></app-backtotop>
+> ~~~
+> - To scroll up
+
+> Button
+> ~~~
+> <button type="button" class="wt-btn wt-btn__primary">
+> ~~~
+> Variations:
+> - wt-btn__primary: Orange style
+> - wt-btn__light: Without color (link)
+> - wt-btn__small: small size
+
+***  
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
 

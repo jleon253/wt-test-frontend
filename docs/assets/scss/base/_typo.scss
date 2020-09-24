@@ -1,0 +1,69 @@
+//  ████████╗██╗...██╗██████╗..██████╗..██████╗.██████╗..█████╗.██████╗.██╗..██╗██╗...██╗
+//  ╚══██╔══╝╚██╗.██╔╝██╔══██╗██╔═══██╗██╔════╝.██╔══██╗██╔══██╗██╔══██╗██║..██║╚██╗.██╔╝
+//  ...██║....╚████╔╝.██████╔╝██║...██║██║..███╗██████╔╝███████║██████╔╝███████║.╚████╔╝.
+//  ...██║.....╚██╔╝..██╔═══╝.██║...██║██║...██║██╔══██╗██╔══██║██╔═══╝.██╔══██║..╚██╔╝..
+//  ...██║......██║...██║.....╚██████╔╝╚██████╔╝██║..██║██║..██║██║.....██║..██║...██║...
+//  ...╚═╝......╚═╝...╚═╝......╚═════╝..╚═════╝.╚═╝..╚═╝╚═╝..╚═╝╚═╝.....╚═╝..╚═╝...╚═╝...
+//  .....................................................................................
+
+*{
+  font-family: 'Gothic A1', system-ui, sans-serif;
+}
+
+p{
+  line-height: 1.65rem;
+}
+
+.light{
+  font-weight: 300;
+}
+
+.medium{
+  font-weight: 500;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.bigger-size{
+  font-size: $f-bigger - 1.87; // 42px
+  @include media('medium'){
+    font-size: $f-bigger - 1.5; // 48px
+  }
+  @include media('x-large'){
+    font-size: $f-bigger; // 72px
+  }
+}
+
+.big-size{
+  font-size: $f-big - 0.25;
+  @include media('desktop'){
+    font-size: $f-big;
+  }
+}
+
+.normal-size{
+  font-size: $f-small;
+  @include media('medium'){
+    font-size: $f-normal - 0.2;
+  }
+  @include media('x-large'){
+    font-size: $f-normal;
+  }
+}
+
+.small-size{
+  font-size: $f-xsmall;
+  @include media('tablet'){
+    font-size: $f-small;
+  }
+}
+
+.xsmall-size{  
+  font-size: $f-xsmall - 0.25;
+}
+
+.muted{
+  color: $c-txt;
+}

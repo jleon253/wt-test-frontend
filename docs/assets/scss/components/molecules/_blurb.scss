@@ -1,0 +1,27 @@
+.wt-blurb{
+  margin: 15px;
+  &__icon{
+    width: 150px;
+    height: 150px;
+    @include b-radius(100%, 100%, 100%, 100%);
+    background-color: $c-w;
+    box-sizing: content-box;
+    padding: 2px;
+    &.img{
+      img{
+        width: 100%;
+        @include b-radius(100%, 100%, 100%, 100%);
+        object-fit: cover;
+      }
+    }
+    &.svg{
+      img{
+        width: 50%;
+      }
+    }
+  }
+  &__desc{
+    width: 100%;
+    word-break: break-word;
+  }
+}
