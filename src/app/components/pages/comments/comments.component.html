@@ -1,10 +1,11 @@
 <main>
   <section class="wt-section wt-section--banner">
     <h1 class="banner__title">Experiencias</h1>
-    <img class="banner__img" src="https://pixabay.com/get/57e2d1464d55aa14f6da8c7dda353678153fd7e55052764c_1280.jpg" alt="las emociones">
+    <img class="banner__img" src="https://i.pinimg.com/originals/e9/a6/5f/e9a65fdb6b0b75d5ee8c899590f8439a.png" alt="las emociones">
     <div class="banner__overlayer"></div>
   </section>
   <section class="wt-section wt-section--muted h-100 d-flex flex-column flex-md-row justify-content-around align-items-center flex-wrap row">
     <app-blurb class="col-12 col-md-4 mx-2" *ngFor="let user of users" [imgsrc]="user.avatar" [title]="user.first_name + ' ' + user.last_name" [desc]="user.email"  [imgType]="'img'"></app-blurb>
   </section>
 </main>
+<app-backtotop class="wt-content-backToTop"></app-backtotop>

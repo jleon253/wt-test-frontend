@@ -7,7 +7,7 @@
 //  ...................................................
 
 .wt-navbar{
-  height: $h-navbar - 5vh;
+  height: $h-navbar;
   padding: 1rem $s-section_x;
   @include media('medium'){
     height: $h-navbar;
