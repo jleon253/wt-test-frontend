@@ -2,7 +2,7 @@
 
 This project is a technical test for Job as Front End Developer in Wunderman Thompson.
 
-Demo:
+Demo: https://jleon253.github.io/wt-test-frontend/
 
 ### Dev tools used:
 > - HTML, CSS (SASS), SVG, normalize.css
