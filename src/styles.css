@@ -4916,6 +4916,10 @@ ul {
   list-style: none;
 }
 
+.hidden {
+  opacity: 0;
+}
+
 * {
   font-family: "Gothic A1", system-ui, sans-serif;
 }
@@ -5159,7 +5163,7 @@ p {
   width: 50%;
 }
 .wt-blurb__desc {
-  width: 90%;
+  width: 100%;
   word-break: break-word;
 }
 
@@ -5247,6 +5251,10 @@ p {
 .wt-navbar-nav .nav-item:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.1);
+}
+.wt-navbar-nav .nav-item .nav-link {
+  display: block;
+  width: 100%;
 }
 
 .wt-section {
